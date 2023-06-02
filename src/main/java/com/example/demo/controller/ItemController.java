@@ -15,6 +15,7 @@ public class ItemController {
 
     private static final Logger LOG = LoggerFactory.getLogger(ItemController.class);
     private final ItemService itemService;
+//    private final ObservationRegistry observationRegistry;
 
     public ItemController(ItemService itemService) {
         this.itemService = itemService;
@@ -30,6 +31,11 @@ public class ItemController {
     public List<ItemDto> getAllItems() {
         LOG.info("Get all items");
         return itemService.getItems();
+        /*
+                return Observation.createNotStarted("get-all-items", observationRegistry)
+            .observe(() -> itemService.getItems());
+
+         */
     }
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
