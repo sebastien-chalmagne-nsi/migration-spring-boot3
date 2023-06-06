@@ -3,7 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.dto.ItemDto;
 import com.example.demo.service.ItemService;
 import java.util.List;
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

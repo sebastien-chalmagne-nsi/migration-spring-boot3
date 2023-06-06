@@ -28,7 +28,7 @@ public class ItemMapper {
 
     public List<ItemDto> toDtoIterable(Iterable<ItemEntity> entities) {
         return IterableUtils.toList(entities).stream()
-            .map(e -> toDto(e))
-            .collect(Collectors.toList());
+            .map(this::toDto)
+            .toList();
     }
 }

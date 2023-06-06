@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+  edmpostgresql:
+    image: postgis/postgis:14-3.3
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home/seb/db/postgreserver/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: adminUser
+      POSTGRES_PASSWORD: adminPassword
