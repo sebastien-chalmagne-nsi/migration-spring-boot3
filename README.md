@@ -9,3 +9,4 @@
 * Adaptation WebSecurityConfig
 * Adaptation repository
 * Adaptation application.properties
+* Branche v3 post migration
